@@ -1,2 +1,2 @@
 
-web: gunicorn day28.wsgi
+web: gunicorn ariweb.wsgi

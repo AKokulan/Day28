@@ -8,7 +8,7 @@ from django.template.defaulttags import register
 from django.contrib.auth.decorators import login_required,permission_required
 from django.db.models import Q
 from django.contrib.auth.models import Permission
-
+'''
 def show_home(request):
 
     main_article_m = ArticleModel.objects.filter(
@@ -48,6 +48,10 @@ def show_home(request):
     #count_all_article= ArticleModel.objects.all().order_by('article_priority').count()
     return render(request,'index.html',{'main_article_m':main_article_m,'carousel_article_m':carousel_article_m,
                                         'all_article_m':article,'trending_article_m':trending_article_m})
+'''
+
+def show_home(request):
+    return render(request, 'index.html',{})
 
 def show_news(request):
     id=request.GET['go']

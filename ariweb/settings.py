@@ -130,7 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'live-static','static-root')
 #STATIC_ROOT = os.path.join(BASE_DIR, "live-static-files", "static-root") #for heroku
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "media/" #for heroku
 MEDIA_ROOT = os.path.join(BASE_DIR,'live-static', 'media-root')

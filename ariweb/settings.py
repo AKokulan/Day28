@@ -133,7 +133,7 @@ STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "media/" #for heroku
-MEDIA_ROOT = os.path.join(BASE_DIR,'staticfiles/medias/media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
 #MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root") #for heroku
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

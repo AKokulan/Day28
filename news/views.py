@@ -46,8 +46,11 @@ def show_home(request):
     print('num of pages: ',paginator.num_pages)
     #print(carousel_article_m)
     #count_all_article= ArticleModel.objects.all().order_by('article_priority').count()
+
     return render(request,'index.html',{'main_article_m':main_article_m,'carousel_article_m':carousel_article_m,
                                         'all_article_m':article,'trending_article_m':trending_article_m})
+
+
 
 
 

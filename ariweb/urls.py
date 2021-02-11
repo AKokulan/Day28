@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('news/',include('news.urls')),
     path('account/',include('users_app.urls')),
-    path('/',news_view.show_home,name='show_home'),
+    path('',news_view.show_home,name='show_home'),
 
 ]

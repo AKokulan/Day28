@@ -126,15 +126,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATIC_ROOT = os.path.join(BASE_DIR, "live-static-files", "static-root") #for heroku
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+#STATIC_ROOT = os.path.join(BASE_DIR, "live-static-files", "static-root") #for heroku
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 
 MEDIA_URL = "media/" #for heroku
-#MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
-MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root") #for heroku
+MEDIA_ROOT = os.path.join(BASE_DIR,'static/media')
+#MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root") #for heroku
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
